@@ -45,16 +45,16 @@ public class FileAttente<A> {
 		FileAttente<Rectangle> far = new FileAttente<>();
 		far.entre(new Rectangle(800, 600));
 		disp(far.toString());
-		disp(String.format("Nombre entrés total : %s", FileAttente.getNbElemEntresTotal()));
-		disp(String.valueOf(FileAttente.containSame(fap, fap)));
+		disp(String.format("Nombre entrés total : %s", FileAttente.getNbElemEntresTotal())); // Nombre entrés total : 2
+		disp(str(FileAttente.containSame(fap, fap))); // true 
 		FileAttente<Personne> fap1 = new FileAttente<>();
-		disp(String.valueOf(FileAttente.containSame(fap, fap1)));
-		disp(String.valueOf(fap.containSame(fap)));
-		disp(String.valueOf(fap.containSame(fap1)));
-		disp(str(fap.containSameNumber(fap)));
+		disp(str(FileAttente.containSame(fap, fap1))); // false
+		disp(str(fap.containSame(fap))); // true
+		disp(str(fap.containSame(fap1))); // false
+		disp(str(fap.containSameNumber(fap))); // true
 		FileAttente<Rectangle> far1 = new FileAttente<Rectangle>();
-		disp(str(fap.containSameNumber(far)));
-		disp(str(fap.containSameNumber(far1)));
+		disp(str(fap.containSameNumber(far))); // true
+		disp(str(fap.containSameNumber(far1))); // false
 	}
 
 	public static void disp(String str) {
