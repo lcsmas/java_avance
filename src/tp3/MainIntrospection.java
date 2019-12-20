@@ -5,7 +5,7 @@ import java.lang.reflect.Modifier;
 import java.util.Scanner;
 import tools.*;
 
-public class Main {
+public class MainIntrospection {
 
 	public static void main(String[] args) throws ClassNotFoundException {
 		Tools.disp("Entrer le nom de la classe à refactoriser");
@@ -38,7 +38,6 @@ public class Main {
 				String mName = m.getName();
 				gen += mReturnType + " " + mName + "();\n";
 			}
-			
 		}
 		gen += "}";
 		return gen;
