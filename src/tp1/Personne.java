@@ -1,8 +1,9 @@
 package tp1;
 
 import java.util.UUID;
+import tp2.Invitable;
 
-public class Personne {
+public class Personne implements Invitable {
 	private UUID id = UUID.randomUUID();
 	private String nom;
 	private String prenom;
@@ -13,6 +14,11 @@ public class Personne {
 	}
 	
 	public String toString() {
-		return String.valueOf(id) + " : " +nom + " " + prenom;
+		return String.valueOf(id) + " : " + nom + " " + prenom;
+	}
+
+	@Override
+	public boolean isInvite() {
+		return true;
 	}
 }

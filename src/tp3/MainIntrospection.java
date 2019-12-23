@@ -11,6 +11,7 @@ public class MainIntrospection {
 		Tools.disp("Entrer le nom de la classe à refactoriser");
 		Scanner sc = new Scanner(System.in);
 		String className = "tp3." + sc.next();
+		sc.close();
 		Tools.disp(generateInterfaceString(className));
 	}
 	

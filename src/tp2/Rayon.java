@@ -1,8 +1,6 @@
 package tp2;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 public class Rayon<A extends ObjetAvecEtiquette> {
 	private ArrayList<A> contenu = new ArrayList<>();
